@@ -1,9 +1,8 @@
 #include "iostream"
-#include "vector"
 using namespace std;
 
 void yess(){
-vector<string> ok = {"Is the Number Less than or Equal to Zero? (1)"," Exit(2)"};
+string ok[] = {"Is the Number Less than or Equal to Zero? (1)"," Exit(2)"};
 cout << "Is the Number Less than or Equal to Zero? ";
 int x;
 cin >> x;
@@ -18,7 +17,7 @@ return;
 }
 }
 int main(){
-vector<string> ok = {"Is the Number Less than or Equal to Zero? (1)"," Exit(2)"};
+string ok[] = {"Is the Number Less than or Equal to Zero? (1)"," Exit(2)"};
 cout << ok[0] << ok[1] << "\n";
 int x;
 while (true){
