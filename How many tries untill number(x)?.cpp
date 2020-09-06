@@ -1,7 +1,6 @@
 #include "iostream"
 #include "ctime"
 #include "unistd.h"
-#include "vector"
 using namespace std;
 
 
@@ -27,7 +26,7 @@ return;
 }
 }
 int main(){
-vector<string> ok = {"How many tries until number X (1)", "Exit (2)"};    
+string ok[] = {"How many tries until number X (1)", "Exit (2)"};    
 int x;
 cout << ok[0] << " " << ok[1] << "\n";
 while(true){
