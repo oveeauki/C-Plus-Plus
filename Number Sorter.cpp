@@ -36,7 +36,7 @@ cin >> f;
 if (f == "y" || f == "Y"){
 sort();    
 }
-if (f == "n" || f == "N"){
+else if (f == "n" || f == "N"){
 cout << "Exit\n";
 sleep(2);
 return;    
@@ -50,7 +50,7 @@ cin >> j;
 if (j == 1){
 sort();
 }
-if (j == 2){
+else if (j == 2){
 cout << "Exit\n";
 sleep(2);
 return 0;    
