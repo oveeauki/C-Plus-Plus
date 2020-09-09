@@ -3,7 +3,6 @@
 #include "iostream"
 #include "ctime"
 #include "unistd.h"
-#include "vector"
 
 using namespace std;
 
@@ -41,7 +40,7 @@ cout << "You Won\n";
 }
 int main(){
 int x;
-vector<string> ok = {"Rock,Paper,Scissors(1)"," Exit(2)"};
+string ok[] = {"Rock,Paper,Scissors(1)"," Exit(2)"};
 cout << ok[0] << ok[1] << "\n";
 while(true){
 cin >> x;
