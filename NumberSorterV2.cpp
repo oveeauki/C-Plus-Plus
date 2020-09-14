@@ -1,3 +1,4 @@
+// This version has user defined amount of numbers and their values
 #include "bits/stdc++.h"
 #include "unistd.h"
 using namespace std;
