@@ -1,54 +1,89 @@
-// This version has user defined amount of numbers and their values
+// This version has user defined amount of numbers and their values and sort from high to low
 #include "bits/stdc++.h"
 #include "unistd.h"
 using namespace std;
-
-void sortv2(){
-string g;
+void htl(){
+string h;
 int x;
-cout << "Please Enter the Amount of Numbers You Want to Sort\n";
+cout << "Enter The Amount of Numbers to Sort ";
 cin >> x;
-long long int y[x];
-int h = sizeof(y) / sizeof(y[0]);
-for(int i=0;i<x;i++){
-cout << "Please Enter Number " << (i+1) << " ";
-cin >> y[i];
+int arr[x];
+int n = sizeof(arr) / sizeof(arr[0]);
+for (int i=0;i<x;i++){
+cout << "Enter Number " << (i+1) << ": ";
+cin >> arr[i];
 }
-cout << "\n";
-cout << "You Entered Numbers ";
-for(int i=0;i<x;i++)
-cout << y[i] << " ";
-cout << "\n";
-sleep(2);
-cout << "Sorting...\n";
-sleep(3);
-sort(y,y+h);
-cout << "Your Numbers in Correct Order Are : ";
+cout << "You Entered Numbers : ";
 for (int i=0;i<x;i++)
-cout << y[i] << " ";
+cout << arr[i] << " ";
 cout << "\n";
-cout << "Sort Again y/N ?\n";
-cin >> g;
-if (g == "y" || g == "Y"){
-sortv2();    
-}
-else if (g == "n" || g == "N"){
-cout << "Exiting...\n";
+cout << "Sorting...\n";
 sleep(2);
-return;    
+reverse(arr,arr+n);
+cout << "Your Numbers in (High to Low) Order Are: ";
+for(int i=0;i<x;i++)
+cout << arr[i] << " ";
+cout << "\n";
+cout << "";
+cout << "Sort Again ? y/N ";
+cin >> h;
+if (h == "y" || h == "Y"){
+htl();    
+}
+else if(h == "n" || h == "N"){
+cout << "Exit\n";
+sleep(1);
+return;
+}
+}
+void lth(){
+string h;
+int x;
+cout << "Enter The Amount of Numbers to Sort ";
+cin >> x;
+int arr[x];
+int n = sizeof(arr) / sizeof(arr[0]);
+for (int i=0;i<x;i++){
+cout << "Enter Number " << (i+1) << ": ";
+cin >> arr[i];
+}
+cout << "You Entered Numbers : ";
+for (int i=0;i<x;i++)
+cout << arr[i] << " ";
+cout << "\n";
+cout << "Sorting...\n";
+sleep(2);
+sort(arr,arr+n);
+cout << "Your Numbers in (Low to High) Order Are: ";
+for(int i=0;i<x;i++)
+cout << arr[i] << " ";
+cout << "\n";
+cout << "";
+cout << "Sort Again ? y/N ";
+cin >> h;
+if (h == "y" || h == "Y"){
+lth();    
+}
+else if(h == "n" || h == "N"){
+cout << "Exit\n";
+sleep(1);
+return;
 }
 }
 int main(){
-int cho;
-string opt[]={"Number Sorter V2(1)", " Exit(2)"};
-cout << opt[0] << opt[1] << "\n";
-cin >> cho;
-if (cho == 1){
-sortv2();
+string opt[]={"Number Sort Low to High (1) ","Number Sort High to Low (2) ","Exit (3)"};
+int sel;
+cout << opt[0] << opt[1] << opt[2] << "\n";
+cin >> sel;
+if (sel == 1){
+lth();
 }
-else if (cho == 2){
-cout << "Exit\n";
-sleep(3);
-return 0;
+else if(sel == 2){
+htl();
+}
+else if(sel == 3){
+cout << "Exiting...\n";
+sleep(1);
+return 0;    
 }
 }
