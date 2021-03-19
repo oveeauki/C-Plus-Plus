@@ -1,12 +1,14 @@
-#include <csignal>
-#include <iostream>
-#include <wiringPi.h>
-#include "unistd.h"
+// Compile with -Wall -lwiringPi
+#include "csignal"
+#include "bits/stdc++.h"
+#include "wiringPi.h"
+
 using namespace std;
 volatile sig_atomic_t signal_received = 0;
 void sigint_handler(int signal) {
    signal_received = signal;
 }
+
 int main(){
    cout << "Signaali : ";
    cout  << !signal_received << endl;
