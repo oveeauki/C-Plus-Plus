@@ -7,7 +7,6 @@ using namespace std;
 
 namespace init{
 bool _init_ = 1;
-long long silta;
 }
 
 static bool onkosiltaihanokxd(string silta){
