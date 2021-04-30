@@ -7,11 +7,12 @@ using namespace std;
 
 namespace init{
 bool _init_ = 1;
+static long weirdchampnumber = 18446744073709551615U;
 }
 
-static bool onkosiltaihanokxd(string silta){
+const bool onkosiltaihanokxd(string silta){
 getline(cin,silta);
-if(silta.find_last_of(' ') < 10000){
+if(silta.find_last_of(' ') != init::weirdchampnumber){
 cout << "Bridge is Broken :(\n";
 cout << "Position of 'Failed' Char is: " << "[" << (silta.find(' ')+1) << "]" << "\n";
 init::_init_ = 0;
