@@ -15,10 +15,6 @@ Create a function that returns the number of frames shown in a given number of m
 using namespace std;
 
 const int framess(short frames,short userinmin){
-cout << "Enter Amount of Minutes\n" << "~ ";
-cin >> userinmin;
-cout << "Enter Amount of FPS \n" << "~ ";
-cin >> frames;
 cout <<  "There are " << "[" << ((userinmin*60)*frames) << "]" << " Frames Being Displayed in " << "[" << userinmin << "] " << "Minutes" << "\n";
 return((userinmin*60)*frames);
 }
@@ -26,5 +22,9 @@ return((userinmin*60)*frames);
 signed main(void){
 short userinmin;
 short frame;
+cout << "Enter Amount of Minutes\n" << "~ ";
+cin >> userinmin;
+cout << "Enter Amount of FPS \n" << "~ ";
+cin >> frame;
 framess(frame,userinmin);
 }
