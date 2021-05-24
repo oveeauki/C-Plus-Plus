@@ -13,8 +13,7 @@ return(ekanumero%tokanumero);
 signed main(void){
 short lippisint[3];
 for(int i=1;i<3;i++){
-cout << "Number " << i << "\n";
-cout << ": ";
+cout << "Number " << i << "\n" << "~ ";
 cin >> lippisint[i];
 }
 modulustaa(lippisint[1],lippisint[2]);
