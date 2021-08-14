@@ -108,7 +108,7 @@ signed main(void){
 clear();
 string usel;
 while(init::_init_){
-cout << "Rock Paper Scissors\n~ " << flush;
+cout << "[Rock/Paper/Scissors]\n~ " << flush;
 cin >> usel;
 checkwords(usel);
 }
