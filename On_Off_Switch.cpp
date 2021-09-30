@@ -1,5 +1,6 @@
 /*
     Workss only on Windows !!! 
+    orr with wine on linux...
                                     */
 
 #include "bits/stdc++.h"
