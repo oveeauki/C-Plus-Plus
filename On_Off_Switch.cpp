@@ -51,7 +51,7 @@ while(_switch != 51){
 _switch = _getch();
 sounds_on_off(_switch);
 }
-cout << "Sekosit lopullisesti !\n";
+cout << "Ny pääsit pitkäänniemeen !\n";
 sleep(3);
 return 0;
 }
