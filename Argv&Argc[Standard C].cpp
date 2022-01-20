@@ -4,11 +4,8 @@
                                                     */
 #include "stdio.h"
 
-signed main(int argc,char *argv[]){
-int n;
-printf("Amount of arguments[%d%s",argc,"]\n");
-for(n=0;n<argc;n++){
-    printf("[%d] Argument == [%s]\n",(n+1),argv[n]);
-}
-return(0);  
+signed main(int argc,char* argv[]){
+for(int i=0;i<argc;i++)
+	printf("Argument [%d] = [%s]\n",(i+1),argv[i]);
+return(0);
 }
